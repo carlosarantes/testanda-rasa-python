@@ -1,0 +1,104 @@
+{
+  "affirm": {
+    "precision": 0.16666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.2857142857142857,
+    "support": 1
+  },
+  "greet": {
+    "precision": 1.0,
+    "recall": 0.2,
+    "f1-score": 0.33333333333333337,
+    "support": 5
+  },
+  "deny": {
+    "precision": 0.3333333333333333,
+    "recall": 0.5,
+    "f1-score": 0.4,
+    "support": 2
+  },
+  "utter_iamabot": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "mood_great": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2
+  },
+  "bot_challenge": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1
+  },
+  "goodbye": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2
+  },
+  "utter_did_that_help": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3
+  },
+  "action_listen": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 16
+  },
+  "utter_cheer_up": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3
+  },
+  "utter_happy": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3
+  },
+  "mood_unhappy": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3
+  },
+  "utter_greet": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5
+  },
+  "utter_goodbye": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4
+  },
+  "micro avg": {
+    "precision": 0.7916666666666666,
+    "recall": 0.7450980392156863,
+    "f1-score": 0.7676767676767677,
+    "support": 51
+  },
+  "macro avg": {
+    "precision": 0.6071428571428571,
+    "recall": 0.6214285714285713,
+    "f1-score": 0.5727891156462585,
+    "support": 51
+  },
+  "weighted avg": {
+    "precision": 0.8006535947712419,
+    "recall": 0.7450980392156863,
+    "f1-score": 0.7402427637721756,
+    "support": 51
+  }
+}

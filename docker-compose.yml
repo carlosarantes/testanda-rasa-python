@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  assistant:
+    build: .
+    tty: true
+    restart: always

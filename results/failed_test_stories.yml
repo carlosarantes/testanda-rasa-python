@@ -1,0 +1,51 @@
+version: "2.0"
+stories:
+- story: happy path 1 (/tmp/tmpi3rroacg/02d4ca9ccb71480cb51de516c0be227f_test_stories.yml)
+  steps:
+  - intent: greet  # predicted: affirm: hello there!
+  - action: utter_greet
+  - intent: mood_great  # predicted: nlu_fallback: amazing
+  - action: utter_happy
+- story: happy path 2 (/tmp/tmpi3rroacg/02d4ca9ccb71480cb51de516c0be227f_test_stories.yml)
+  steps:
+  - intent: greet  # predicted: affirm: hello there!
+  - action: utter_greet
+  - intent: mood_great  # predicted: nlu_fallback: amazing
+  - action: utter_happy
+  - intent: goodbye  # predicted: mood_great: bye-bye!
+  - action: utter_goodbye
+- story: sad path 1 (/tmp/tmpi3rroacg/02d4ca9ccb71480cb51de516c0be227f_test_stories.yml)
+  steps:
+  - intent: greet  # predicted: affirm: hello
+  - action: utter_greet
+  - intent: mood_unhappy  # predicted: deny: not good
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+- story: sad path 2 (/tmp/tmpi3rroacg/02d4ca9ccb71480cb51de516c0be227f_test_stories.yml)
+  steps:
+  - intent: greet  # predicted: affirm: hello
+  - action: utter_greet
+  - intent: mood_unhappy  # predicted: deny: not good
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny  # predicted: nlu_fallback: not really
+  - action: utter_goodbye
+- story: sad path 3 (/tmp/tmpi3rroacg/02d4ca9ccb71480cb51de516c0be227f_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy  # predicted: affirm: very terrible
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+- story: say goodbye (/tmp/tmpi3rroacg/02d4ca9ccb71480cb51de516c0be227f_test_stories.yml)
+  steps:
+  - intent: goodbye  # predicted: mood_great: bye-bye!
+  - action: utter_goodbye
+- story: bot challenge (/tmp/tmpi3rroacg/02d4ca9ccb71480cb51de516c0be227f_test_stories.yml)
+  steps:
+  - intent: bot_challenge  # predicted: goodbye: are you a bot?
+  - action: utter_iamabot
