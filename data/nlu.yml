@@ -1,0 +1,84 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - sussa
+    - opa
+    - eae
+    - bão?
+    - oie
+    - ou
+    - oi
+    - oii
+    - fala
+    - man
+    - bom dia
+
+- intent: goodbye
+  examples: |
+    - boa noite
+    - bom dia
+    - xau
+    - tchau
+    - falou
+    - flw
+    - falow
+    - até mais
+    - até amanhã
+
+- intent: affirm
+  examples: |
+    - sim
+    - s
+    - ss
+    - de fato
+    - com certeza
+    - claro
+    - bom
+    - top
+    - correto
+
+- intent: deny
+  examples: |
+    - não
+    - naum
+    - n
+    - nn
+    - nada haver
+    - negativo
+
+- intent: mood_great
+  examples: |
+    - eu to top
+    - de boa
+    - bem
+    - suave
+    - otimo
+    - estupendo
+
+- intent: mood_unhappy
+  examples: |
+    - to mals
+    - mal
+    - to na bad
+    - to com azar
+    - hoje não é meu dia
+
+- intent: bot_challenge
+  examples: |
+    - mano, ce não é humano?
+    - voce é gente?
+    - voce é um robo?
+
+- synonym: sussa
+  examples: |
+    - top
+    - estou muito top
+    - to bem de boa
+
+- regex: cpf
+  examples: |
+    - \d{11}
+    - /(\d{3})(\d{3})(\d{3})(\d{2})/
+    - /(\d{3}).(\d{3}).(\d{3})-(\d{2})/
